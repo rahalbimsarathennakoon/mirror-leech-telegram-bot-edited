@@ -9,12 +9,12 @@ jobs:
       - uses: actions/checkout@v2
       - uses: akhileshns/heroku-deploy@v3.12.12
         with:
-          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-          heroku_app_name: ${{secrets.HEROKU_APP_NAME}}
-          heroku_email: ${{secrets.HEROKU_EMAIL}}
+          heroku_api_key: 4b39e78b-0ea3-4732-a85e-de3b67b1f42f
+          heroku_app_name: rahalbimsarathennakoon
+          heroku_email: rahalbimsarathennakoon@outlook.com
           usedocker: true
           docker_heroku_process_type: web
           stack: "container"
           region: "us"
         env:
-          HD_CONFIG_FILE_URL: ${{secrets.CONFIG_FILE_URL}}
+          HD_CONFIG_FILE_URL: https://gist.githubusercontent.com/rahalbimsarathennakoon/121071d698c676c51fe2ecf119ca7ca4/raw/config.env
